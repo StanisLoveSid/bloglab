@@ -3,6 +3,7 @@
 <head>
   <title>Bloglab</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Raleway:400,700' %>
   <%= csrf_meta_tags %>
 </head>
@@ -15,13 +16,13 @@
 	 </div>
 
 	 <ul>
-		 <li class="category">Website</li>
+		 <li class="category">Вебсайт</li>
 		 <li><%= link_to "Blog", root_path %></li>
-		 <li>About</li>
+		 <li>Про сайт</li>
 	 </ul>
 
 	 <ul>
-		 <li class="category">Social</li>
+		 <li class="category">Контакты</li>
 		 <li><a href="http://vk.com/id90664978">VK</a></li>
 		 <li><a href="https://twitter.com/StasSidorenko2">Twitter</a></li>
 		
@@ -32,7 +33,7 @@
 
  <div id="main_content">
 	 <div id="header">
-		 <p>All posts</p>
+		 <p>Все посты</p>
 
 		 <div class="buttons">
 			 <button class="button"><%= link_to "New post", new_post_path %></button>
