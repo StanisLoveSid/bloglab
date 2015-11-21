@@ -31,9 +31,9 @@
 
 	 <ul>
 		 <li class="category">Languages</li>
-		 <li><%= link_to "English", locale: "en" %></li>
-		 <li><%= link_to "日本語", locale: "ja" %></li>
-		 <li><%= link_to "Українська" %></li>
+		 <li><%= link_to_unless_current "English", locale: "en" %></li>
+		 <li><%= link_to_unless_current "日本語", locale: "ja" %></li>
+		 <li><%= link_to_unless_current "Українська", locale: "ua" %></li>
 	 </ul> 
 
        <% if !user_signed_in? %>  

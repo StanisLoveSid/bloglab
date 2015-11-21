@@ -21,4 +21,5 @@
 
 en:
         layouts:
-                title: "Website"
+                application:
+                             title: "Website"

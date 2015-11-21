@@ -2,4 +2,5 @@
 
 ja:
         layuots:
-                title: "ウェブサイト"
+                application:
+                            title: "ウェブサイト"
