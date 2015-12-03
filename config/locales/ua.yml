@@ -1,4 +1,44 @@
+
+
 ua:
         layouts:
-                application:
-                             title: "Вебсайт"
+                
+                            title: "Вебсайт"
+                            contacts: "Контакти"
+                            languages: "Мова"
+                            title4: "Усі пости"
+                            about: "Про сайт"
+                            title6: "Назад до усіх постів"
+                            blog: "Блог"      
+                            registration: "Реєстрація"
+                            new_post: "Новий пост"        
+                            back_to_all_posts: "Назад до усіх постів"
+                            log_out: "Вийти"
+                            log_in: "Увійти"       
+        devise: 
+                            log_in: "Увійти" 
+                            remember_me: "Запам'ятайте мене!" 
+                            email: "Пошта"
+                            password: "Пароль"
+                            sign_up: "Підписатися" 
+                            forgot_your_password: "Забули свій пароль?" 
+                            password_confirmation: "Підтвердження паролю"
+                            sign_in_with: "Увійти"
+                            send_me_reset_password_instructions: "Надішліть мені інструкцію з відновлення паролю"       
+
+        posts:
+                            edit: "Коректувати"
+                            delete: "Удалити"
+                            add_comment: "Добавити коментарій"
+                            comments: "Коментарій"
+                            title: "Назва" 
+                            body: "Основа"
+                            create_post: "Новий пост"
+                            submited: "створений"
+                            ago: "тому"        
+                                    
+        comments:
+                            name: "Ім'я"
+                            body: "Основа"
+                            create_comment: "Новий коментар"      
+                            ago: "тому"        

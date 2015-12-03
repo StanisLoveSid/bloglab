@@ -1,0 +1,43 @@
+
+
+ja:
+
+        layouts:
+                
+                            title: "ウェブサイト"
+                            contacts: "コンタクト"
+                            languages: "言語"
+                            title4: "すべてのポスト"
+                            about: "について"
+                            title6: "前にすべてのポスト"
+                            blog: "ブログ"      
+                            registration: "レジストレーション"
+                            new_post: "新しいポスト"        
+                            back_to_all_posts: "前にすべてのポスト"
+                            log_out: "ログアウト"
+                            log_in: "ログイン"       
+        devise: 
+                            log_in: "ログイン" 
+                            remember_me: "私に考えりましょ！" 
+                            email: "メール"
+                            password: "パスアド"
+                            sign_up: "サインアップ" 
+                            forgot_your_password: "パスアドを忘れりましたか？" 
+                            password_confirmation: "パスアドの確認"
+                            sign_in_with: "ログイン"
+                            send_me_reset_password_instructions: "助けてくださくて新しいパスアド作てください！"       
+
+        posts:
+                            edit: "アプデイト"
+                            delete: "流す"
+                            add_comment: "コメントを加える"
+                            comments: "コメント"
+                            title: "タイトル" 
+                            body: "体"
+                            create_post: "新しいポスト"        
+        comments:
+                            name: "名前"
+                            body: "体"
+                            create_comment: "新しいコメント" 
+
+                   

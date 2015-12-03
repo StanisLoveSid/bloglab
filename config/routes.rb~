@@ -1,0 +1,25 @@
+Rails.application.routes.draw do
+ scope ":locale", locale: /#{I18n.available_locales.join("|")}/ do 
+ devise_for :users
+  
+ 
+   devise_for :users
+ resources :posts do
+	     resources :comments
+	  end
+     root "posts#index"
+     
+	         get '/about', to: 'pages#about'
+        
+		   end
+
+ 
+   
+   get '*path', to: redirect("#/{I18n.default_locale}/%{path}")
+   get '', to: redirect("#/{I18n.default_locale}/%{}")
+
+   get '/about', to: 'pages#about'
+ end
+ 
+ 
+

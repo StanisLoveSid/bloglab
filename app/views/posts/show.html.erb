@@ -4,9 +4,9 @@
 </h1>
 
 <p class="date">
-Submited <%= time_ago_in_words(@post.created_at) %> ago
+<%= t "posts.submited" %> <%= time_ago_in_words(@post.created_at) %> <%= t "posts.ago"%>
   <% if user_signed_in? %>
-| <%= link_to 'Edit', edit_post_path(@post) %>
+| <%= link_to(t('posts.edit'), edit_post_path(@post)) %>
 | <%= link_to 'Delete', post_path(@post), method: :delete, data: {confirm: 'Are you sure?'} %>
   <% end %>
  </p>
@@ -15,9 +15,9 @@ Submited <%= time_ago_in_words(@post.created_at) %> ago
  <%= @post.body %>
  </p>
  <div id="comments">
-	 <h2><%= @post.comments.count %> Comments</h2>
+	 <h2><%= @post.comments.count %> <%= t "posts.comments"%></h2>
 	 <%= render @post.comments %>
- <h3> Добавить коментарий: </h3>
+	 <h3><%= t "posts.add_comment"%> </h3>
  <%= render "comments/form" %>
    </div>
  </div>

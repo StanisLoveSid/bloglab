@@ -19,7 +19,43 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
+
+
 en:
         layouts:
-                application:
-                             title: "Website"
+                
+                            title: "website"
+                            contacts: "contacts"
+                            languages: "languages"
+                            title4: "All posts"
+                            about: "About"
+                            title6: "Back to all posts"
+                            blog: "blog"      
+                            registration: "registration"
+                            new_post: "New post"        
+                            back_to_all_posts: "Back to All posts"
+                            log_out: "Log out"
+                            log_in: "Log in"       
+        devise: 
+                            log_in: "Log in" 
+                            remember_me: "Remember me！" 
+                            email: "Email"
+                            password: "Password"
+                            sign_up: "Sign up" 
+                            forgot_your_password: "Forgot your password?" 
+                            password_confirmation: "Password confirmation"
+                            sign_in_with: "Log in"
+                            send_me_reset_password_instructions: "Send me reset password instructions"       
+
+        posts:
+                            edit: "Edit"
+                            delete: "Delete"
+                            add_comment: "Addcomment"
+                            comments: "comments"
+                            title: "Title" 
+                            body: "Body"
+                            create_post: "Create post"        
+        comments:
+                            name: "Name"
+                            body: "Body"
+                            create_comment: "Create comment"            

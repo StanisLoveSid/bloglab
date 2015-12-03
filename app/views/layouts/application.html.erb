@@ -11,33 +11,33 @@
  <div id="sidebar">
 	 <div id= "logo">
 		 <%= link_to root_path do %>
-			 <%= image_tag "nihongo.png" %>
+			 <%= image_tag "ichiban.png" %>
 		 <% end %>
 	 </div>
 
 	 <ul>
 		 <li class="category"><%= t "layouts.title"  %></li>
-		 <li><%= link_to "Blog", root_path %></li>
-		 <li><%= link_to "About", about_path %></li>
-		 <li><a href="http://localhost:3000/users/sign_up">Registration</a></li>
+		 <li><%= link_to(t('layouts.blog'), root_path)  %></li>
+		 <li><%= link_to(t('layouts.about'), about_path) %></li>
+		 <li><a href="http://0.0.0.0:3000/users/sign_up"><%= t 'layouts.registration' %></a></li>
 	 </ul>
 
 	 <ul>
-		 <li class="category">Контакты</li>
+		 <li class="category"><%= t "layouts.contacts"%></li>
 		 <li><a href="http://vk.com/id90664978">VK</a></li>
 		 <li><a href="https://twitter.com/StasSidorenko2">Twitter</a></li>
 		
 	 </ul>
 
 	 <ul>
-		 <li class="category">Languages</li>
+		 <li class="category"><%= t "layouts.languages" %></li>
 		 <li><%= link_to_unless_current "English", locale: "en" %></li>
 		 <li><%= link_to_unless_current "日本語", locale: "ja" %></li>
 		 <li><%= link_to_unless_current "Українська", locale: "ua" %></li>
 	 </ul> 
 
        <% if !user_signed_in? %>  
-	       <p class="sign_in">Admin Login</p>
+	       <p class="sign_in"></p>
        <% end %>
  </div>
 
@@ -49,26 +49,29 @@
 		 <% elsif current_page?(about_path) %>
 			 <p>About</p>
 		 <% else %>
-			 <%= link_to "Back to All posts", root_path %>
+			 <%= link_to(t("layouts.back_to_all_posts"), root_path) %>
 		 <% end %>
 
-		 <% if user_signed_in? %>
+		 
+                 <% if user_signed_in? %>
 
 		 <div class="buttons">
-			 <button class="button"><%= link_to "New post", new_post_path %></button>
-	</button><%= link_to "Log Out", destroy_user_session_path, :class => "button", method: :delete %>
+			 <button class="button"><%= link_to(t("layouts.new_post"), new_post_path) %></button>
+	</button><%= link_to "log_out", destroy_user_session_path, :class => "button", method: :delete %>
 
 		 </div>
 	 <% end %>
 	 <% if !user_signed_in? %>
 		 <div class="buttons">
-			 <button class="button"><%= link_to "Log in", new_post_path %></button> 
+			 <button class="button"><%= link_to(t("layouts.log_in"), new_post_path) %></button> 
 		 </div>
 	 <% end %>
+	 
 	 </div>
+ 
 	 <% flash.each do |name, msg|%>
 		 <%= content_tag(:div, msg, class: "alert") %>
- <% end %>
+	 <% end %> 
  <%= yield %>
  </div>
  

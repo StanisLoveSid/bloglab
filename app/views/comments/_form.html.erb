@@ -1,12 +1,12 @@
 
 <%= form_for([@post, @post.comments.build]) do |f| %>
 
-	<%= f.label :name %><br>
+	<%= f.label(t("comments.name")) %><br>
 	<%= f.text_field :name %><br>
 	<br>
-	<%= f.label :body %><br>
+	<%= f.label(t("comments.body")) %><br>
 	<%= f.text_area :body %><br>
 	<br>
-	<%= f.submit %>
+	<%= f.submit(t("comments.create_comment")) %>
 <% end %>
 
