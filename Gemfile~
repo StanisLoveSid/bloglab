@@ -11,7 +11,7 @@ group :development, :production, :test do
  gem 'pg'
 end
 
-gem 'devise'
+
 
 
 
