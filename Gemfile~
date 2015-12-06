@@ -11,6 +11,8 @@ group :development, :production, :test do
  gem 'pg'
 end
 
+gem 'devise'
+
 
 
 # Use SCSS for stylesheets
