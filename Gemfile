@@ -8,6 +8,10 @@ gem 'pg'
 
 
 
+gem "sqlite3"
+
+
+
 
 
 # Use SCSS for stylesheets
