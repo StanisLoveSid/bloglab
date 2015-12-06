@@ -5,17 +5,6 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.5'
  
 
-group :development do
-  gem 'sqlite3'
-end
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
-end
-
-
-
-
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -59,5 +48,14 @@ group :development do
   gem 'devise', '~> 3.4.0'
   gem 'passenger'
 
+
+end
+
+group :development do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
