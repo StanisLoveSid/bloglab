@@ -12,9 +12,9 @@ default: &default
 development:
   <<: *default
   host: localhost        
-  database: bloglab
-  username: admin
-  password: 301095st        
+  database: ruby
+  username: admin9j3b6ys
+  password: qutVG9vUkaLV        
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -22,13 +22,14 @@ development:
 test:
   <<: *default
   host: localhost        
-  database: bloglab_test
-  username: admin
-  password: 301095st        
+  database: ruby
+  username: admin9j3b6ys
+  password: qutVG9vUkaLV         
 
 production:
   <<: *default
   host: localhost        
-  database: bloglab
-  username: admin
-  password: 301095st        
+  database: ruby
+  username: admin9j3b6ys
+  password: qutVG9vUkaLV         
+
