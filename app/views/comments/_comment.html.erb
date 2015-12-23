@@ -5,10 +5,10 @@
 		<p class="comment_time"><%= time_ago_in_words(comment.created_at) %> <%= t "comments.ago" %></p>
 	</div>
 	<% if user_signed_in? %>
-	<p><%= link_to 'Delete', [comment.post, comment],
+	<p><%= link_to(t('comments.delete'), [comment.post, comment],
 	               method: :delete,
 	               class: "button",
-	data: { comfirm: 'Are you sure' } %>
+	data: { comfirm: 'Are you sure' }) %>
 </p>
 	<% end %>
 </div>

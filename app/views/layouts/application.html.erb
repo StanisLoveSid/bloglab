@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="google-site-verification" content="3li0DutDNLzYNQTjR5_Fym6cLjez59T8A15UUSo_TSM" />
+<meta name='yandex-verification' content='72297eb1250c1dc3' />
   <title>Bloglab</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -19,7 +21,7 @@
 		 <li class="category"><%= t "layouts.title"  %></li>
 		 <li><%= link_to(t('layouts.blog'), root_path)  %></li>
 		 <li><%= link_to(t('layouts.about'), about_path) %></li>
-		 <li><a href="http://0.0.0.0:3000/users/sign_up"><%= t 'layouts.registration' %></a></li>
+		 <li><a href="http://blog.jankenpon.info/users/sign_up"><%= t 'layouts.registration' %></a></li>
 
 	 </ul>
 
@@ -58,7 +60,7 @@
 
 		 <div class="buttons">
 			 <button class="button"><%= link_to(t("layouts.new_post"), new_post_path) %></button>
-	</button><%= link_to "log_out", destroy_user_session_path, :class => "button", method: :delete %>
+	</button><%= link_to(t("layouts.log_out"), destroy_user_session_path, :class => "button", method: :delete) %>
 
 		 </div>
 	 <% end %>

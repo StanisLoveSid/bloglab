@@ -290,4 +290,5 @@ ua:
                             name: "Ім'я"
                             body: "Основа"
                             create_comment: "Новий коментар"      
-                            ago: "тому"        
+                            ago: "тому"       
+                            delete: "Удалити" 
